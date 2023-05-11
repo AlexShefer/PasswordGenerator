@@ -1,0 +1,92 @@
+:root {
+    --background-color: #273549;
+    --header-color: #ffffff;
+    --span-color: #4adf86;
+    --button-color: #10b981;
+    --field-color: #273549;
+    --password-color: #55f991;
+    --frame-color: #1c1c1c;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--frame-color);
+    border-radius: 40px;
+}
+
+.container {
+    background: var(--background-color);
+    padding: 20px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+h1,
+p {
+    color: var(--header-color);
+    margin: 4px;
+}
+
+span {
+    color: var(--span-color);
+}
+
+button {
+    align-self: center;
+    background: var(--button-color);
+    color: var(--header-color);
+    border-radius: 10px;
+    padding: 9px 15px;
+    border: none;
+}
+
+.form {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.password-field {
+    width: 40%;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--field-color);
+    border: 2px solid var(--frame-color);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.password {
+    color: var(--password-color);
+    padding-left: 10px;
+}
+#icon {
+    height: 16px;
+}
+#length {
+    width: 40%;
+
+    border-radius: 10px;
+    background: var(--field-color);
+    border: 2px solid var(--frame-color);
+    color: var(--password-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
